@@ -7,7 +7,7 @@
   <title>SUKNA XXI | Jadual & Keputusan</title>
   <meta name="description" content="Match Centre SUKNA XXI Selangor 2026 — jadual perlawanan dan keputusan berdasarkan jadual rasmi kejohanan.">
   <link rel="icon" href="assets/mascot.webp" type="image/webp">
-  <link rel="stylesheet" href="css/style.css?v=3">
+  <link rel="stylesheet" href="css/style.css?v=4">
 </head>
 <body>
   <header class="topbar">
@@ -36,6 +36,7 @@
           <div class="hero-actions">
             <a class="btn primary" href="#match-centre">Lihat Perlawanan</a>
             <a class="btn ghost" href="#jadual-umum">Jadual Umum</a>
+            <button class="btn ghost" id="refreshLiveBtn" type="button">↻ Kemaskini Data</button>
           </div>
         </div>
         <div class="hero-art">
@@ -140,11 +141,12 @@
   <footer>
     <div class="shell footer-grid">
       <div class="footer-brand"><img src="assets/sukna-logo.webp" alt="SUKNA XXI"><div><b>Jadual & Keputusan</b><small>Portal berasingan SUKNA XXI Selangor 2026</small></div></div>
-      <p>Prototaip ini menggunakan snapshot XLSX yang dimuat naik. Tiada keputusan direka; ruangan keputusan kekal menunggu input rasmi.</p>
+      <p>Data disambungkan terus kepada Google Sheet rasmi urus setia. <span id="liveFooterStatus">Sedang menyambung…</span></p>
     </div>
   </footer>
 
-  <script src="js/data.js?v=3"></script>
-  <script src="js/app.js?v=3"></script>
+  <script src="js/data.js?v=4"></script>
+  <script src="js/app.js?v=4"></script>
+  <script src="js/live-data.js?v=4"></script>
 </body>
 </html>
