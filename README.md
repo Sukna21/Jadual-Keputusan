@@ -67,3 +67,19 @@ Extract ZIP ini dan replace semua fail di root repo `Sukna21/Jadual-Keputusan`.
 
 GitHub Pages:
 `https://sukna21.github.io/Jadual-Keputusan/`
+
+
+## FIX keputusan live v5
+
+Portal sekarang menunjukkan status sambungan sebenar di footer:
+
+- `LIVE 13/13 tab` = semua tab sukan berjaya dibaca daripada Google Sheet.
+- `TIDAK LIVE ... snapshot terakhir` = Google Sheet tidak boleh dibaca dan portal sedang guna data statik.
+
+Keputusan menyokong:
+- dua sel skor di kiri/kanan `:`
+- `3-1`
+- `3 : 1`
+- teks seperti `W/O`
+
+URL Google Sheet turut menggunakan cache-buster pada setiap refresh.

@@ -66,7 +66,7 @@
 
       const tqx=encodeURIComponent(`out:json;responseHandler:${cb};reqId:${Date.now()}`);
       const selector=gid ? `gid=${encodeURIComponent(gid)}` : `sheet=${encodeURIComponent(name)}`;
-      script.src=`https://docs.google.com/spreadsheets/d/${SPREADSHEET_ID}/gviz/tq?${selector}&headers=0&tqx=${tqx}`;
+      script.src=`https://docs.google.com/spreadsheets/d/${SPREADSHEET_ID}/gviz/tq?${selector}&headers=0&tqx=${tqx}&tq=${encodeURIComponent("select *")}&_=${Date.now()}`;
       document.body.appendChild(script);
     });
   }
@@ -153,17 +153,47 @@
 
   function extractResult(row,resultCol){
     if(resultCol<0) return "";
-    const vals=[];
-    for(let c=resultCol;c<=Math.min(row.length-1,resultCol+3);c++){
-      const v=clean(row[c]);
-      if(!v || v===":" || v==="-" || /^vs$/i.test(v)) continue;
-      vals.push(v);
+
+    // Struktur rasmi lazimnya: skor kiri | : | skor kanan
+    // Header KEPUTUSAN pula digabung (merged) merentasi beberapa sel.
+    const start=Math.max(0,resultCol);
+    const end=Math.min(row.length-1,resultCol+4);
+    const block=[];
+    for(let c=start;c<=end;c++) block.push({index:c,value:clean(row[c])});
+
+    const isPlaceholder=v=>!v || v===":" || v==="-" || v==="–" || v==="—" || /^vs$/i.test(v);
+    const isNumeric=v=>/^-?\d+(?:\.\d+)?$/.test(v);
+
+    // Format terus dalam satu sel, contoh 3-1 / 3 : 1
+    for(const cell of block){
+      const m=cell.value.match(/^\s*(\d+)\s*[:\-–—]\s*(\d+)\s*$/);
+      if(m) return `${m[1]} : ${m[2]}`;
     }
-    if(!vals.length) return "";
-    if(vals.length>=2 && vals.slice(0,2).every(v=>/^-?\d+(?:\.\d+)?$/.test(v))){
-      return `${vals[0]} : ${vals[1]}`;
+
+    // Format asal workbook: skor | : | skor
+    const sep=block.findIndex(cell=>/^\s*:\s*$/.test(cell.value));
+    if(sep>=0){
+      let left="", right="";
+      for(let i=sep-1;i>=0;i--){
+        const v=block[i].value;
+        if(!isPlaceholder(v)){ left=v; break; }
+      }
+      for(let i=sep+1;i<block.length;i++){
+        const v=block[i].value;
+        if(!isPlaceholder(v)){ right=v; break; }
+      }
+      if(left && right) return `${left} : ${right}`;
     }
-    return vals.slice(0,2).join(" : ");
+
+    // Fallback: dua nombor pertama dalam blok KEPUTUSAN
+    const nums=block.map(x=>x.value).filter(v=>isNumeric(v));
+    if(nums.length>=2) return `${nums[0]} : ${nums[1]}`;
+
+    // Sokong keputusan teks seperti W/O
+    const text=block.map(x=>x.value).filter(v=>!isPlaceholder(v));
+    if(text.length===1 && !isNumeric(text[0])) return text[0];
+
+    return "";
   }
 
   function roundMarker(row,current){
@@ -336,7 +366,9 @@
       updated:new Date().toLocaleString("ms-MY")
     };
 
-    // Sports: every tab loads independently; one broken tab does not blank the portal.
+    let loadedSports=0;
+
+    // Setiap tab cuba load sendiri supaya satu tab rosak tidak blank-kan portal.
     const sportResults=await Promise.allSettled(SHEETS.sports.map(async cfg=>{
       const base=next.sports.find(s=>s.id===cfg.id);
       if(!base) return null;
@@ -347,9 +379,17 @@
     sportResults.forEach((res,i)=>{
       if(res.status==="fulfilled" && res.value){
         const idx=next.sports.findIndex(s=>s.id===SHEETS.sports[i].id);
-        if(idx>=0) next.sports[idx]=res.value;
+        if(idx>=0){
+          next.sports[idx]=res.value;
+          loadedSports++;
+        }
       }
     });
+
+    // Kalau semua tab gagal, jangan label fallback snapshot sebagai LIVE.
+    if(loadedSports===0){
+      throw new Error("Google Sheet tidak boleh dibaca. Semak General access: Anyone with the link → Viewer.");
+    }
 
     // General schedule
     try{
@@ -363,7 +403,11 @@
       next.medals=parseMedals(tableMatrix(table),next.medals);
     }catch(_){}
 
-    return next;
+    return {
+      data: next,
+      loadedSports,
+      totalSports: SHEETS.sports.length
+    };
   }
 
   async function refresh({manual=false}={}){
@@ -371,7 +415,8 @@
     loading=true;
     setStatus("Sedang membaca Google Sheet rasmi…",false,true);
     try{
-      const data=await buildLiveData();
+      const liveResult=await buildLiveData();
+      const data=liveResult.data;
       const fingerprint=JSON.stringify(data);
       const changed=fingerprint!==lastFingerprint;
       lastFingerprint=fingerprint;
@@ -380,10 +425,10 @@
         window.dispatchEvent(new CustomEvent("sukna:data-updated",{detail:data}));
       }
       const time=new Date().toLocaleTimeString("ms-MY",{hour:"2-digit",minute:"2-digit",second:"2-digit"});
-      setStatus(`Live · dikemas kini ${time}`,true,false);
+      setStatus(`LIVE ${liveResult.loadedSports}/${liveResult.totalSports} tab · dikemas kini ${time}`,true,false);
     }catch(err){
       console.error("SUKNA live data:",err);
-      setStatus("Google Sheet tidak dapat dibaca · paparan menggunakan snapshot terakhir",false,false);
+      setStatus("TIDAK LIVE · Google Sheet gagal dibaca · sedang guna snapshot terakhir",false,false);
     }finally{
       loading=false;
     }
