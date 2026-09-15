@@ -25,7 +25,7 @@
   const gold = D.general.reduce((n,g)=>n+(Number(g.gold)||0),0);
   const venues = new Set(D.general.map(g=>g.venue).filter(Boolean)).size;
   $('#summaryStats').innerHTML = [
-    ['🏆',D.general.length,'Acara dalam Jadual Umum'],['⚔️',totalMatches,'Perlawanan dalam tab sukan'],['🥇',gold,'Pingat emas'],['📍',venues,'Venue pertandingan']
+    ['🏆',D.general.length,'Acara'],['⚔️',totalMatches,'Perlawanan'],['🥇',gold,'Pingat emas'],['📍',venues,'Venue pertandingan']
   ].map(x=>`<article class="stat-card"><i>${x[0]}</i><div><b>${x[1]}</b><small>${x[2]}</small></div></article>`).join('');
 
   // Overall medal standings.
