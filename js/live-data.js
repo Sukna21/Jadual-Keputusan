@@ -3,6 +3,7 @@
 
   const SPREADSHEET_ID = "1qiRF16JhUlDBV9ZvoO6YhA5JnCbjqFcs";
   const REFRESH_MS = 60000;
+  const BUILD = "v6";
 
   // GIDs from the current official Google Sheet.
   const SHEETS = {
@@ -151,47 +152,50 @@
     return `${day(ds[0])}-${day(ds.at(-1))} SEPTEMBER 2026`;
   }
 
-  function extractResult(row,resultCol){
-    if(resultCol<0) return "";
+  function extractResult(row,resultCol,teamBCol=-1){
+    // Source workbook layout is not a normal database table.
+    // The reliable structure on every match row is:
+    // TEAM B | score kiri | ":" | score kanan
+    //
+    // Example:
+    // Bola Sepak: H=TEAM B, I=score, J=":", K=score
+    // Bola Tampar: I=TEAM B, J=score, K=":", L=score
 
-    // Struktur rasmi lazimnya: skor kiri | : | skor kanan
-    // Header KEPUTUSAN pula digabung (merged) merentasi beberapa sel.
-    const start=Math.max(0,resultCol);
-    const end=Math.min(row.length-1,resultCol+4);
-    const block=[];
-    for(let c=start;c<=end;c++) block.push({index:c,value:clean(row[c])});
+    const valueAt=i => (i>=0 && i<row.length) ? clean(row[i]) : "";
+    const isEmpty=v => !v || v==="-" || v==="–" || v==="—" || /^vs$/i.test(v);
 
-    const isPlaceholder=v=>!v || v===":" || v==="-" || v==="–" || v==="—" || /^vs$/i.test(v);
-    const isNumeric=v=>/^-?\d+(?:\.\d+)?$/.test(v);
+    // 1) Most reliable: find ":" shortly after Team B.
+    const scanStart = teamBCol>=0 ? teamBCol+1 : Math.max(0,resultCol);
+    const scanEnd = Math.min(row.length-1, scanStart+8);
 
-    // Format terus dalam satu sel, contoh 3-1 / 3 : 1
-    for(const cell of block){
-      const m=cell.value.match(/^\s*(\d+)\s*[:\-–—]\s*(\d+)\s*$/);
+    for(let c=scanStart;c<=scanEnd;c++){
+      if(/^\s*:\s*$/.test(valueAt(c))){
+        const left=valueAt(c-1);
+        const right=valueAt(c+1);
+        if(!isEmpty(left) && !isEmpty(right)){
+          return `${left} : ${right}`;
+        }
+      }
+    }
+
+    // 2) If urus setia types complete score into one cell.
+    for(let c=scanStart;c<=scanEnd;c++){
+      const v=valueAt(c);
+      const m=v.match(/^\s*(\d+)\s*[:\-–—]\s*(\d+)\s*$/);
       if(m) return `${m[1]} : ${m[2]}`;
     }
 
-    // Format asal workbook: skor | : | skor
-    const sep=block.findIndex(cell=>/^\s*:\s*$/.test(cell.value));
-    if(sep>=0){
-      let left="", right="";
-      for(let i=sep-1;i>=0;i--){
-        const v=block[i].value;
-        if(!isPlaceholder(v)){ left=v; break; }
+    // 3) Header-based fallback around KEPUTUSAN.
+    if(resultCol>=0){
+      const block=[];
+      for(let c=resultCol;c<=Math.min(row.length-1,resultCol+5);c++){
+        const v=valueAt(c);
+        if(v && v!==":" && !isEmpty(v)) block.push(v);
       }
-      for(let i=sep+1;i<block.length;i++){
-        const v=block[i].value;
-        if(!isPlaceholder(v)){ right=v; break; }
-      }
-      if(left && right) return `${left} : ${right}`;
+      const nums=block.filter(v=>/^-?\d+(?:\.\d+)?$/.test(v));
+      if(nums.length>=2) return `${nums[0]} : ${nums[1]}`;
+      if(block.length===1 && !/^\d+(?:\.\d+)?$/.test(block[0])) return block[0];
     }
-
-    // Fallback: dua nombor pertama dalam blok KEPUTUSAN
-    const nums=block.map(x=>x.value).filter(v=>isNumeric(v));
-    if(nums.length>=2) return `${nums[0]} : ${nums[1]}`;
-
-    // Sokong keputusan teks seperti W/O
-    const text=block.map(x=>x.value).filter(v=>!isPlaceholder(v));
-    if(text.length===1 && !isNumeric(text[0])) return text[0];
 
     return "";
   }
@@ -258,7 +262,7 @@
         reference:idxRef>=0 ? clean(row[idxRef]) : "",
         teamA:idxTeamA>=0 ? clean(row[idxTeamA]) : "",
         teamB:idxTeamB>=0 ? clean(row[idxTeamB]) : "",
-        result:extractResult(row,idxResult)
+        result:extractResult(row,idxResult,idxTeamB)
       });
     }
 
@@ -425,10 +429,10 @@
         window.dispatchEvent(new CustomEvent("sukna:data-updated",{detail:data}));
       }
       const time=new Date().toLocaleTimeString("ms-MY",{hour:"2-digit",minute:"2-digit",second:"2-digit"});
-      setStatus(`LIVE ${liveResult.loadedSports}/${liveResult.totalSports} tab · dikemas kini ${time}`,true,false);
+      setStatus(`LIVE ${liveResult.loadedSports}/${liveResult.totalSports} tab · ${BUILD} · dikemas kini ${time}`,true,false);
     }catch(err){
       console.error("SUKNA live data:",err);
-      setStatus("TIDAK LIVE · Google Sheet gagal dibaca · sedang guna snapshot terakhir",false,false);
+      setStatus(`TIDAK LIVE · ${BUILD} · Google Sheet gagal dibaca · sedang guna snapshot terakhir`,false,false);
     }finally{
       loading=false;
     }

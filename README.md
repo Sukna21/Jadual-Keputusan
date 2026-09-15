@@ -83,3 +83,20 @@ Keputusan menyokong:
 - teks seperti `W/O`
 
 URL Google Sheet turut menggunakan cache-buster pada setiap refresh.
+
+
+## v6 — keputusan live + cache fix
+
+Perubahan:
+- `index.html` menggunakan cache key baharu `20260915-v6`.
+- footer akan papar `v6` jika browser benar-benar menjalankan loader baharu.
+- keputusan tidak lagi bergantung kepada kedudukan header `KEPUTUSAN`.
+- parser mencari pola sebenar pada setiap row:
+  `Pasukan B | skor kiri | : | skor kanan`.
+- masih menyokong format satu sel seperti `3-1` / `3 : 1`.
+
+Selepas upload:
+1. pastikan `index.html` di repo mengandungi `20260915-v6`.
+2. buka portal.
+3. footer mesti papar `v6`.
+4. tekan `Kemaskini Data`.
