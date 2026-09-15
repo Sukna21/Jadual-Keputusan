@@ -1,65 +1,16 @@
-# SUKNA XXI — Jadual & Keputusan
+# Jadual & Keputusan SUKNA XXI Selangor 2026
 
-Package standalone untuk repo:
+Prototaip Match Centre berasingan untuk repo `Sukna21/Jadual-Keputusan`.
 
-`Sukna21/Jadual-Keputusan`
+## Kandungan
+- `index.html` — halaman utama Match Centre
+- `js/data.js` — snapshot data yang diterjemah daripada `LATEST JADUAL SUKNA (1).xlsx`
+- `data.json` — data yang sama dalam format JSON
+- `js/app.js` — UI interaktif, filter sukan/round/pasukan
+- `css/style.css` — reka bentuk portal
 
-Website GitHub Pages selepas deploy:
+## Prinsip data
+Paparan ini tidak mencipta atau mengagak keputusan. Dalam XLSX sumber, ruangan keputusan dan kedudukan masih kosong / perlu diisi manual, jadi paparan score kekal `— : —` sehingga data rasmi tersedia.
 
-`https://sukna21.github.io/Jadual-Keputusan/`
-
-## Fix versi ini
-
-### Venue sync
-Parser tidak lagi menganggap venue perlu berada pada setiap row perlawanan.
-
-Ia akan:
-1. Membaca nilai `TEMPAT:` pada setiap tab sukan.
-2. Menggunakan nilai itu sebagai **venue default untuk semua perlawanan** dalam tab.
-3. Mengekalkan `GLG` sebagai gelanggang/court (contoh A, C, 1 & 2), bukan menggantikannya sebagai venue.
-4. Membenarkan row khusus override venue. Contoh `Stadium` bagi Grand Final Bola Sepak → **Stadium UPM**.
-5. Tidak pernah menggunakan `Venue Utama` sebagai fallback tempat perlawanan.
-
-### Struktur yang diaudit daripada XLSX terbaru
-- Bola Sepak → Padang Bola Sepak A & C UPM
-- Bola Jaring → Dewan Serbaguna Akademi Sukan UPM
-- Bola Tampar L/W → Astaka Seni & Gelanggang Serbaguna Akademi Sukan UPM
-- Futsal Lelaki → Gelanggang Serbaguna, Akademi Sukan, UPM
-- Futsal Wanita → Gelanggang Sintetik, Akademi Sukan, UPM
-- Badminton → Dewan Serbaguna Akademi Sukan UPM
-- Karom → Bilik Terapi Sukan, Akademi Sukan, UPM
-- Dart → Bilik Seminar, Akademi Sukan, UPM
-- Sepak Takraw → Dewan Serbaguna Akademi Sukan UPM
-- Ping Pong → Dewan Serbaguna Akademi Sukan UPM
-- Tarik Tali 680KG / Freeweight → Lapang Sasar Memanah, UPM
-
-## Cara replace repo
-
-1. Extract ZIP.
-2. Upload semua fail/folder ke root repo `Sukna21/Jadual-Keputusan`.
-3. GitHub → **Settings → Pages**.
-4. Source: `Deploy from a branch`.
-5. Branch: `main`, Folder: `/ (root)`.
-6. Save.
-
-## Nota branding
-Logo/maskot rasmi dimuat dari Portal-Main supaya visual kekal sama. Fail SVG fallback tempatan disediakan jika imej remote tidak boleh dimuat.
-
-## Data source
-Google Sheet:
-`1qiRF16JhUlDBV9ZvoO6YhA5JnCbjqFcs`
-
-Parser menggunakan Google Visualization endpoint dengan `headers=0`, supaya blok metadata seperti `ACARA:`, `TARIKH:` dan `TEMPAT:` boleh dibaca terus.
-
-
-## Navigation scope
-
-Versi ini khusus untuk **Jadual & Keputusan / Match Centre** sahaja.
-
-Navigasi tidak lagi mengandungi:
-- Venue
-- Penginapan
-- Galeri
-- seksyen lain Portal-Main
-
-Semua navigasi dalaman kekal di Match Centre ini, kecuali pautan eksplisit ke Google Sheet rasmi.
+## Hosting
+Upload semua fail ke root branch `main`, kemudian aktifkan GitHub Pages daripada branch `main` / root.

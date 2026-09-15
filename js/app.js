@@ -86,7 +86,11 @@
   }
   function matchCard(m){
     const ref=m.reference && (!m.teamA.includes('ZON') || !m.teamB.includes('ZON')) ? `<div class="match-reference">Rujukan bracket asal: <b>${m.reference}</b></div>` : '';
-    const court=m.court ? `Glg ${m.court}` : 'Venue utama';
+    const rawCourt=String(m.court||'').trim();
+    const cleanCourt=rawCourt.replace(/\.0$/,'');
+    const court=/^stadium$/i.test(cleanCourt)
+      ? 'Stadium UPM'
+      : (cleanCourt ? `Glg ${cleanCourt}` : (activeSport.venue || 'Venue belum ditetapkan'));
     const score=m.result || '— : —';
     const pending=!m.result;
     return `<article class="match-card">
