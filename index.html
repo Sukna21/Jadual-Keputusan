@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="ms">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#c91922">
+  <title>SUKNA XXI | Jadual & Keputusan</title>
+  <meta name="description" content="Match Centre SUKNA XXI Selangor 2026 — jadual perlawanan dan keputusan berdasarkan jadual rasmi kejohanan.">
+  <link rel="icon" href="assets/mascot.webp" type="image/webp">
+  <link rel="stylesheet" href="css/style.css?v=1">
+</head>
+<body>
+  <header class="topbar">
+    <div class="shell topbar-inner">
+      <a href="#dashboard" class="brand">
+        <img src="assets/sukna-logo.webp" alt="SUKNA XXI Selangor 2026">
+        <div><small>MATCH CENTRE</small><b>Jadual & Keputusan</b></div>
+      </a>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu">☰</button>
+      <nav id="mainNav">
+        <a href="#dashboard" class="active">Utama</a>
+        <a href="#jadual-umum">Jadual Umum</a>
+        <a href="#sukan">Sukan</a>
+        <a href="#match-centre">Perlawanan</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="dashboard">
+      <div class="shell hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">SUKNA XXI · SELANGOR 2026</span>
+          <h1>Jadual <em>&</em><br>Keputusan</h1>
+          <p>Semua jadual perlawanan diterjemah terus daripada fail rasmi kepada paparan match centre yang lebih mudah dibaca — tanpa rupa spreadsheet.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#match-centre">Lihat Perlawanan</a>
+            <a class="btn ghost" href="#jadual-umum">Jadual Umum</a>
+          </div>
+          <div class="source-note">Sumber prototaip: <b>LATEST JADUAL SUKNA (1).xlsx</b> · Keputusan masih kosong dalam fail sumber.</div>
+        </div>
+        <div class="hero-art">
+          <div class="date-badge"><span>17–20</span><b>SEPT 2026</b><small>UPM · SERDANG</small></div>
+          <img src="assets/mascot.webp" alt="Maskot SUKNA XXI">
+        </div>
+      </div>
+    </section>
+
+    <section class="quick-stats">
+      <div class="shell stat-grid" id="summaryStats"></div>
+    </section>
+
+    <section class="section" id="jadual-umum">
+      <div class="shell">
+        <div class="section-title-row">
+          <div><span class="eyebrow">OVERVIEW KEJOHANAN</span><h2>Jadual Umum</h2><p>Ringkasan acara, tarikh pertandingan, venue dan jumlah pingat emas seperti dalam tab Jadual Umum.</p></div>
+          <div class="day-switcher" id="daySwitcher"></div>
+        </div>
+        <div class="general-grid" id="generalGrid"></div>
+      </div>
+    </section>
+
+    <section class="section sport-select-section" id="sukan">
+      <div class="shell">
+        <div class="section-title-row compact">
+          <div><span class="eyebrow">PILIH ACARA</span><h2>Semua Sukan</h2><p>Pilih sukan untuk buka jadual kumpulan, perlawanan kalah mati dan final.</p></div>
+          <label class="search"><span>⌕</span><input id="sportSearch" type="search" placeholder="Cari sukan…"></label>
+        </div>
+        <div class="sport-grid" id="sportGrid"></div>
+      </div>
+    </section>
+
+    <section class="section match-section" id="match-centre">
+      <div class="shell">
+        <div class="match-header">
+          <div class="sport-kicker" id="sportKicker">PILIH SUKAN</div>
+          <h2 id="sportTitle">Bola Sepak</h2>
+          <div class="sport-meta" id="sportMeta"></div>
+        </div>
+
+        <div class="match-layout">
+          <aside class="groups-panel" id="groupsPanel"></aside>
+          <div class="matches-panel">
+            <div class="filter-row">
+              <div class="round-tabs" id="roundTabs"></div>
+              <label class="search small"><span>⌕</span><input id="matchSearch" type="search" placeholder="Cari pasukan…"></label>
+            </div>
+            <div id="matchList"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="shell footer-grid">
+      <div class="footer-brand"><img src="assets/sukna-logo.webp" alt="SUKNA XXI"><div><b>Jadual & Keputusan</b><small>Portal berasingan SUKNA XXI Selangor 2026</small></div></div>
+      <p>Prototaip ini menggunakan snapshot XLSX yang dimuat naik. Tiada keputusan direka; ruangan keputusan kekal menunggu input rasmi.</p>
+    </div>
+  </footer>
+
+  <script src="js/data.js?v=1"></script>
+  <script src="js/app.js?v=1"></script>
+</body>
+</html>

@@ -1,0 +1,2033 @@
+window.SUKNA_MATCH_DATA = {
+  "meta": {
+    "title": "Jadual & Keputusan SUKNA XXI Selangor 2026",
+    "source": "LATEST JADUAL SUKNA (1).xlsx",
+    "updated": "Snapshot daripada fail XLSX yang dimuat naik"
+  },
+  "general": [
+    {
+      "no": "1.0",
+      "event": "Bola Sepak",
+      "venue": "Padang Bola Sepak A, C & Stadium UPM",
+      "gold": 1,
+      "days": 3,
+      "dateLabel": "17-19 SEPTEMBER 2026"
+    },
+    {
+      "no": "2.0",
+      "event": "Bola Jaring",
+      "venue": "Dewan Serbaguna, Akademi Sukan, UPM",
+      "gold": 1,
+      "days": 1,
+      "dateLabel": "18 SEPTEMBER 2026 (JUMAAT)"
+    },
+    {
+      "no": "3.0",
+      "event": "Karom Campuran",
+      "venue": "Bilik Terapi, Akademi Sukan, UPM",
+      "gold": 1,
+      "days": 1,
+      "dateLabel": ""
+    },
+    {
+      "no": "4.0",
+      "event": "Tarik Tali Lelaki",
+      "venue": "Lapang Sasar Memanah, Akademi Sukan, UPM",
+      "gold": 2,
+      "days": 1,
+      "dateLabel": ""
+    },
+    {
+      "no": "5.0",
+      "event": "Futsal Lelaki",
+      "venue": "Gelanggang Serbaguna, Akademi Sukan, UPM",
+      "gold": 1,
+      "days": 1,
+      "dateLabel": "18 SEPTEMBER 2026 (JUMAAT)"
+    },
+    {
+      "no": "6.0",
+      "event": "Futsal Wanita",
+      "venue": "Gelanggang Sintetik, Akademi Sukan, UPM",
+      "gold": 1,
+      "days": 1,
+      "dateLabel": "18 SEPTEMBER 2026 (JUMAAT)"
+    },
+    {
+      "no": "7.0",
+      "event": "Tenpin Boling Berpasukan",
+      "venue": "IOI City Mall, Putrajaya",
+      "gold": 1,
+      "days": 1,
+      "dateLabel": ""
+    },
+    {
+      "no": "8.0",
+      "event": "Badminton Berpasukan",
+      "venue": "Dewan Serbaguna, Akademi Sukan, UPM",
+      "gold": 1,
+      "days": 1,
+      "dateLabel": "19 SEPTEMBER 2026 (SABTU)"
+    },
+    {
+      "no": "9.0",
+      "event": "Ping Pong Berpasukan",
+      "venue": "Dewan Serbaguna, Akademi Sukan, UPM",
+      "gold": 1,
+      "days": 1,
+      "dateLabel": "19 SEPTEMBER 2026 (SABTU)"
+    },
+    {
+      "no": "10.0",
+      "event": "Dart",
+      "venue": "Bilik Seminar & Terapi, Akademi Sukan, UPM",
+      "gold": 1,
+      "days": 1,
+      "dateLabel": "19 SEPTEMBER 2026 (SABTU)"
+    },
+    {
+      "no": "11.0",
+      "event": "Bola Tampar Lelaki",
+      "venue": "Gelanggang Astaka Seni, UPM",
+      "gold": 1,
+      "days": 2,
+      "dateLabel": "19-20 SEPTEMBER 2026"
+    },
+    {
+      "no": "12.0",
+      "event": "Bola Tampar Wanita",
+      "venue": "Gelanggang Serbaguna, Akademi Sukan, UPM",
+      "gold": 1,
+      "days": 2,
+      "dateLabel": "19-20 SEPTEMBER 2026"
+    },
+    {
+      "no": "13.0",
+      "event": "Olahraga",
+      "venue": "Stadium, UPM",
+      "gold": 9,
+      "days": 1,
+      "dateLabel": ""
+    },
+    {
+      "no": "14.0",
+      "event": "Sepak Takraw Lelaki",
+      "venue": "Dewan Serbaguna, Akademi Sukan, UPM",
+      "gold": 1,
+      "days": 1,
+      "dateLabel": "20 SEPTEMBER 2026 (AHAD)"
+    }
+  ],
+  "sports": [
+    {
+      "id": "bola-sepak",
+      "sheet": "BOLA SEPAK",
+      "name": "BOLA SEPAK",
+      "dateLabel": "17-19 SEPTEMBER 2026",
+      "venue": "PADANG BOLA SEPAK A & C UPM",
+      "groups": [
+        {
+          "name": "Kumpulan A",
+          "teams": [
+            "ZON HQ",
+            "ZON TENGAH",
+            "ZON SELATAN",
+            "ZON TIMUR",
+            "ZON UTARA"
+          ]
+        }
+      ],
+      "matches": [
+        {
+          "no": 1,
+          "date": "2026-09-17",
+          "dateDisplay": "17 September 2026 · Khamis",
+          "time": "17:00",
+          "court": "A",
+          "round": "Liga Kumpulan",
+          "reference": "",
+          "teamA": "ZON HQ",
+          "teamB": "ZON TENGAH",
+          "result": ""
+        },
+        {
+          "no": 2,
+          "date": "2026-09-17",
+          "dateDisplay": "17 September 2026 · Khamis",
+          "time": "17:00",
+          "court": "C",
+          "round": "Liga Kumpulan",
+          "reference": "",
+          "teamA": "ZON SELATAN",
+          "teamB": "ZON TIMUR",
+          "result": ""
+        },
+        {
+          "no": 3,
+          "date": "2026-09-18",
+          "dateDisplay": "18 September 2026 · Jumaat",
+          "time": "08:30",
+          "court": "A",
+          "round": "Liga Kumpulan",
+          "reference": "",
+          "teamA": "ZON TIMUR",
+          "teamB": "ZON UTARA",
+          "result": ""
+        },
+        {
+          "no": 4,
+          "date": "2026-09-18",
+          "dateDisplay": "18 September 2026 · Jumaat",
+          "time": "08:30",
+          "court": "C",
+          "round": "Liga Kumpulan",
+          "reference": "",
+          "teamA": "ZON HQ",
+          "teamB": "ZON SELATAN",
+          "result": ""
+        },
+        {
+          "no": 5,
+          "date": "2026-09-18",
+          "dateDisplay": "18 September 2026 · Jumaat",
+          "time": "17:00",
+          "court": "A",
+          "round": "Liga Kumpulan",
+          "reference": "",
+          "teamA": "ZON UTARA",
+          "teamB": "ZON HQ",
+          "result": ""
+        },
+        {
+          "no": 6,
+          "date": "2026-09-18",
+          "dateDisplay": "18 September 2026 · Jumaat",
+          "time": "17:00",
+          "court": "C",
+          "round": "Liga Kumpulan",
+          "reference": "",
+          "teamA": "ZON TENGAH",
+          "teamB": "ZON SELATAN",
+          "result": ""
+        },
+        {
+          "no": 7,
+          "date": "2026-09-19",
+          "dateDisplay": "19 September 2026 · Sabtu",
+          "time": "08:30",
+          "court": "A",
+          "round": "Liga Kumpulan",
+          "reference": "",
+          "teamA": "ZON TENGAH",
+          "teamB": "ZON TIMUR",
+          "result": ""
+        },
+        {
+          "no": 8,
+          "date": "2026-09-19",
+          "dateDisplay": "19 September 2026 · Sabtu",
+          "time": "08:30",
+          "court": "C",
+          "round": "Liga Kumpulan",
+          "reference": "",
+          "teamA": "ZON SELATAN",
+          "teamB": "ZON UTARA",
+          "result": ""
+        },
+        {
+          "no": 9,
+          "date": "2026-09-19",
+          "dateDisplay": "19 September 2026 · Sabtu",
+          "time": "17:00",
+          "court": "A",
+          "round": "Liga Kumpulan",
+          "reference": "",
+          "teamA": "ZON HQ",
+          "teamB": "ZON TIMUR",
+          "result": ""
+        },
+        {
+          "no": 10,
+          "date": "2026-09-19",
+          "dateDisplay": "19 September 2026 · Sabtu",
+          "time": "17:00",
+          "court": "C",
+          "round": "Liga Kumpulan",
+          "reference": "",
+          "teamA": "ZON TENGAH",
+          "teamB": "ZON UTARA",
+          "result": ""
+        },
+        {
+          "no": 11,
+          "date": "2026-09-20",
+          "dateDisplay": "20 September 2026 · Ahad",
+          "time": "08:30",
+          "court": "Stadium",
+          "round": "Grand Final",
+          "reference": "",
+          "teamA": "",
+          "teamB": "",
+          "result": ""
+        }
+      ]
+    },
+    {
+      "id": "bola-jaring",
+      "sheet": "BOLA JARING",
+      "name": "BOLA JARING",
+      "dateLabel": "18 SEPTEMBER 2026 (JUMAAT)",
+      "venue": "DEWAN SERBAGUNA AKADEMI SUKAN UPM",
+      "groups": [
+        {
+          "name": "Kumpulan A",
+          "teams": [
+            "ZON UTARA",
+            "ZON TENGAH",
+            "ZON TIMUR",
+            "ZON HQ",
+            "ZON SELATAN"
+          ]
+        }
+      ],
+      "matches": [
+        {
+          "no": 1,
+          "date": "2026-09-18",
+          "dateDisplay": "18 September 2026 · Jumaat",
+          "time": "08:30",
+          "court": "",
+          "round": "Liga Kumpulan",
+          "reference": "",
+          "teamA": "ZON UTARA",
+          "teamB": "ZON TENGAH",
+          "result": ""
+        },
+        {
+          "no": 2,
+          "date": "2026-09-18",
+          "dateDisplay": "18 September 2026 · Jumaat",
+          "time": "09:00",
+          "court": "",
+          "round": "Liga Kumpulan",
+          "reference": "",
+          "teamA": "ZON TIMUR",
+          "teamB": "ZON HQ",
+          "result": ""
+        },
+        {
+          "no": 3,
+          "date": "2026-09-18",
+          "dateDisplay": "18 September 2026 · Jumaat",
+          "time": "09:30",
+          "court": "",
+          "round": "Liga Kumpulan",
+          "reference": "",
+          "teamA": "ZON SELATAN",
+          "teamB": "ZON UTARA",
+          "result": ""
+        },
+        {
+          "no": 4,
+          "date": "2026-09-18",
+          "dateDisplay": "18 September 2026 · Jumaat",
+          "time": "10:00",
+          "court": "",
+          "round": "Liga Kumpulan",
+          "reference": "",
+          "teamA": "ZON TENGAH",
+          "teamB": "ZON TIMUR",
+          "result": ""
+        },
+        {
+          "no": 5,
+          "date": "2026-09-18",
+          "dateDisplay": "18 September 2026 · Jumaat",
+          "time": "10:30",
+          "court": "",
+          "round": "Liga Kumpulan",
+          "reference": "",
+          "teamA": "ZON HQ",
+          "teamB": "ZON SELATAN",
+          "result": ""
+        },
+        {
+          "no": 6,
+          "date": "2026-09-18",
+          "dateDisplay": "18 September 2026 · Jumaat",
+          "time": "11:00",
+          "court": "",
+          "round": "Liga Kumpulan",
+          "reference": "",
+          "teamA": "ZON UTARA",
+          "teamB": "ZON TIMUR",
+          "result": ""
+        },
+        {
+          "no": 7,
+          "date": "2026-09-18",
+          "dateDisplay": "18 September 2026 · Jumaat",
+          "time": "11:30",
+          "court": "",
+          "round": "Liga Kumpulan",
+          "reference": "",
+          "teamA": "ZON TENGAH",
+          "teamB": "ZON HQ",
+          "result": ""
+        },
+        {
+          "no": 8,
+          "date": "2026-09-18",
+          "dateDisplay": "18 September 2026 · Jumaat",
+          "time": "12:00",
+          "court": "",
+          "round": "Liga Kumpulan",
+          "reference": "",
+          "teamA": "ZON TIMUR",
+          "teamB": "ZON SELATAN",
+          "result": ""
+        },
+        {
+          "no": 9,
+          "date": "2026-09-18",
+          "dateDisplay": "18 September 2026 · Jumaat",
+          "time": "15:00",
+          "court": "",
+          "round": "Liga Kumpulan",
+          "reference": "",
+          "teamA": "ZON UTARA",
+          "teamB": "ZON HQ",
+          "result": ""
+        },
+        {
+          "no": 10,
+          "date": "2026-09-18",
+          "dateDisplay": "18 September 2026 · Jumaat",
+          "time": "15:30",
+          "court": "",
+          "round": "Liga Kumpulan",
+          "reference": "",
+          "teamA": "ZON TENGAH",
+          "teamB": "ZON SELATAN",
+          "result": ""
+        },
+        {
+          "no": 11,
+          "date": "2026-09-18",
+          "dateDisplay": "18 September 2026 · Jumaat",
+          "time": "16:20",
+          "court": "",
+          "round": "Grand Final",
+          "reference": "",
+          "teamA": "",
+          "teamB": "",
+          "result": ""
+        }
+      ]
+    },
+    {
+      "id": "bola-tampar-lelaki",
+      "sheet": "BOLA TAMPAR LELAKI",
+      "name": "BOLA TAMPAR LELAKI",
+      "dateLabel": "19-20 SEPTEMBER 2026",
+      "venue": "ASTAKA SENI & GELANGGANG SERBAGUNA AKADEMI SUKAN UPM",
+      "groups": [
+        {
+          "name": "Kumpulan A",
+          "teams": [
+            "HQ",
+            "ZON UTARA",
+            "ZON SELATAN"
+          ]
+        },
+        {
+          "name": "Kumpulan B",
+          "teams": [
+            "ZON TIMUR",
+            "ZON SABAH",
+            "ZON TENGAH"
+          ]
+        }
+      ],
+      "matches": [
+        {
+          "no": 1,
+          "date": "2026-09-19",
+          "dateDisplay": "19 September 2026 · Sabtu",
+          "time": "08:00",
+          "court": "2.0",
+          "round": "Liga Kumpulan",
+          "reference": "A1 - A3",
+          "teamA": "HQ",
+          "teamB": "ZON SELATAN",
+          "result": ""
+        },
+        {
+          "no": 2,
+          "date": "2026-09-19",
+          "dateDisplay": "19 September 2026 · Sabtu",
+          "time": "09:30",
+          "court": "2.0",
+          "round": "Liga Kumpulan",
+          "reference": "B1 - B3",
+          "teamA": "ZON TIMUR",
+          "teamB": "ZON TENGAH",
+          "result": ""
+        },
+        {
+          "no": 3,
+          "date": "2026-09-19",
+          "dateDisplay": "19 September 2026 · Sabtu",
+          "time": "11:00",
+          "court": "2.0",
+          "round": "Liga Kumpulan",
+          "reference": "A1 - A2",
+          "teamA": "HQ",
+          "teamB": "ZON UTARA",
+          "result": ""
+        },
+        {
+          "no": 4,
+          "date": "2026-09-19",
+          "dateDisplay": "19 September 2026 · Sabtu",
+          "time": "14:30",
+          "court": "2.0",
+          "round": "Liga Kumpulan",
+          "reference": "B1 - B2",
+          "teamA": "ZON TIMUR",
+          "teamB": "ZON SABAH",
+          "result": ""
+        },
+        {
+          "no": 5,
+          "date": "2026-09-19",
+          "dateDisplay": "19 September 2026 · Sabtu",
+          "time": "16:00",
+          "court": "2.0",
+          "round": "Liga Kumpulan",
+          "reference": "A2 - A3",
+          "teamA": "ZON UTARA",
+          "teamB": "ZON SELATAN",
+          "result": ""
+        },
+        {
+          "no": 6,
+          "date": "2026-09-19",
+          "dateDisplay": "19 September 2026 · Sabtu",
+          "time": "17:30",
+          "court": "2.0",
+          "round": "Liga Kumpulan",
+          "reference": "B2 - B3",
+          "teamA": "ZON SABAH",
+          "teamB": "ZON TENGAH",
+          "result": ""
+        },
+        {
+          "no": 8,
+          "date": "2026-09-20",
+          "dateDisplay": "20 September 2026 · Ahad",
+          "time": "08:30",
+          "court": "2.0",
+          "round": "Separuh Akhir",
+          "reference": "JB - NJA",
+          "teamA": "JB",
+          "teamB": "NJA",
+          "result": ""
+        },
+        {
+          "no": 9,
+          "date": "2026-09-20",
+          "dateDisplay": "20 September 2026 · Ahad",
+          "time": "10:00",
+          "court": "2.0",
+          "round": "Separuh Akhir",
+          "reference": "JA - NJB",
+          "teamA": "JA",
+          "teamB": "NJB",
+          "result": ""
+        },
+        {
+          "no": 10,
+          "date": "2026-09-20",
+          "dateDisplay": "20 September 2026 · Ahad",
+          "time": "14:30",
+          "court": "2.0",
+          "round": "Akhir",
+          "reference": "KH1 - KH2",
+          "teamA": "KH1",
+          "teamB": "KH2",
+          "result": ""
+        },
+        {
+          "no": 11,
+          "date": "2026-09-20",
+          "dateDisplay": "20 September 2026 · Ahad",
+          "time": "16:30",
+          "court": "2.0",
+          "round": "Akhir",
+          "reference": "MG1 - MG2",
+          "teamA": "MG1",
+          "teamB": "MG2",
+          "result": ""
+        }
+      ]
+    },
+    {
+      "id": "bola-tampar-wanita",
+      "sheet": "BOLA TAMPAR WANITA",
+      "name": "BOLA TAMPAR WANITA",
+      "dateLabel": "19-20 SEPTEMBER 2026",
+      "venue": "ASTAKA SENI & GELANGGANG SERBAGUNA AKADEMI SUKAN UPM",
+      "groups": [
+        {
+          "name": "Kumpulan A",
+          "teams": [
+            "HQ",
+            "ZON TIMUR",
+            "ZON SABAH"
+          ]
+        },
+        {
+          "name": "Kumpulan B",
+          "teams": [
+            "ZON SELATAN",
+            "ZON UTARA",
+            "ZON TENGAH"
+          ]
+        }
+      ],
+      "matches": [
+        {
+          "no": 1,
+          "date": "2026-09-19",
+          "dateDisplay": "19 September 2026 · Sabtu",
+          "time": "08:00",
+          "court": "1.0",
+          "round": "Liga Kumpulan",
+          "reference": "A1 - A3",
+          "teamA": "HQ",
+          "teamB": "ZON SABAH",
+          "result": ""
+        },
+        {
+          "no": 2,
+          "date": "2026-09-19",
+          "dateDisplay": "19 September 2026 · Sabtu",
+          "time": "09:30",
+          "court": "1.0",
+          "round": "Liga Kumpulan",
+          "reference": "B1 - B3",
+          "teamA": "ZON SELATAN",
+          "teamB": "ZON TENGAH",
+          "result": ""
+        },
+        {
+          "no": 3,
+          "date": "2026-09-19",
+          "dateDisplay": "19 September 2026 · Sabtu",
+          "time": "11:00",
+          "court": "1.0",
+          "round": "Liga Kumpulan",
+          "reference": "A1 - A2",
+          "teamA": "HQ",
+          "teamB": "ZON TIMUR",
+          "result": ""
+        },
+        {
+          "no": 4,
+          "date": "2026-09-19",
+          "dateDisplay": "19 September 2026 · Sabtu",
+          "time": "14:30",
+          "court": "1.0",
+          "round": "Liga Kumpulan",
+          "reference": "B1 - B2",
+          "teamA": "ZON SELATAN",
+          "teamB": "ZON UTARA",
+          "result": ""
+        },
+        {
+          "no": 5,
+          "date": "2026-09-19",
+          "dateDisplay": "19 September 2026 · Sabtu",
+          "time": "16:00",
+          "court": "1.0",
+          "round": "Liga Kumpulan",
+          "reference": "A2 - A3",
+          "teamA": "ZON TIMUR",
+          "teamB": "ZON SABAH",
+          "result": ""
+        },
+        {
+          "no": 6,
+          "date": "2026-09-19",
+          "dateDisplay": "19 September 2026 · Sabtu",
+          "time": "17:30",
+          "court": "1.0",
+          "round": "Liga Kumpulan",
+          "reference": "B2 - B3",
+          "teamA": "ZON UTARA",
+          "teamB": "ZON TENGAH",
+          "result": ""
+        },
+        {
+          "no": 8,
+          "date": "2026-09-20",
+          "dateDisplay": "20 September 2026 · Ahad",
+          "time": "08:30",
+          "court": "1.0",
+          "round": "Separuh Akhir",
+          "reference": "JB - NJA",
+          "teamA": "JB",
+          "teamB": "NJA",
+          "result": ""
+        },
+        {
+          "no": 9,
+          "date": "2026-09-20",
+          "dateDisplay": "20 September 2026 · Ahad",
+          "time": "10:00",
+          "court": "1.0",
+          "round": "Separuh Akhir",
+          "reference": "JA - NJB",
+          "teamA": "JA",
+          "teamB": "NJB",
+          "result": ""
+        },
+        {
+          "no": 10,
+          "date": "2026-09-20",
+          "dateDisplay": "20 September 2026 · Ahad",
+          "time": "14:30",
+          "court": "1.0",
+          "round": "Akhir",
+          "reference": "KH1 - KH2",
+          "teamA": "KH1",
+          "teamB": "KH2",
+          "result": ""
+        },
+        {
+          "no": 11,
+          "date": "2026-09-20",
+          "dateDisplay": "20 September 2026 · Ahad",
+          "time": "16:30",
+          "court": "1.0",
+          "round": "Akhir",
+          "reference": "MG1 - MG2",
+          "teamA": "MG1",
+          "teamB": "MG2",
+          "result": ""
+        }
+      ]
+    },
+    {
+      "id": "futsal-lelaki",
+      "sheet": "FUTSAL LELAKI",
+      "name": "FUTSAL LELAKI",
+      "dateLabel": "18 SEPTEMBER 2026 (JUMAAT)",
+      "venue": "GELANGGANG SERBAGUNA, AKADEMI SUKAN, UPM",
+      "groups": [
+        {
+          "name": "Kumpulan A",
+          "teams": [
+            "ZON TIMUR",
+            "ZON UTARA",
+            "ZON TENGAH"
+          ]
+        },
+        {
+          "name": "Kumpulan B",
+          "teams": [
+            "ZON SELATAN",
+            "ZON HQ",
+            "ZON SABAH"
+          ]
+        }
+      ],
+      "matches": [
+        {
+          "no": 1,
+          "date": "2026-09-18",
+          "dateDisplay": "18 September 2026 · Jumaat",
+          "time": "08:30",
+          "court": "1.0",
+          "round": "Liga Kumpulan",
+          "reference": "A1 - A3",
+          "teamA": "ZON TIMUR",
+          "teamB": "ZON TENGAH",
+          "result": ""
+        },
+        {
+          "no": 2,
+          "date": "2026-09-18",
+          "dateDisplay": "18 September 2026 · Jumaat",
+          "time": "09:00",
+          "court": "1.0",
+          "round": "Liga Kumpulan",
+          "reference": "B1 - B3",
+          "teamA": "ZON SELATAN",
+          "teamB": "ZON SABAH",
+          "result": ""
+        },
+        {
+          "no": 3,
+          "date": "2026-09-18",
+          "dateDisplay": "18 September 2026 · Jumaat",
+          "time": "09:30",
+          "court": "1.0",
+          "round": "Liga Kumpulan",
+          "reference": "A1 - A2",
+          "teamA": "ZON TIMUR",
+          "teamB": "ZON UTARA",
+          "result": ""
+        },
+        {
+          "no": 4,
+          "date": "2026-09-18",
+          "dateDisplay": "18 September 2026 · Jumaat",
+          "time": "10:00",
+          "court": "1.0",
+          "round": "Liga Kumpulan",
+          "reference": "B1 - B2",
+          "teamA": "ZON SELATAN",
+          "teamB": "ZON HQ",
+          "result": ""
+        },
+        {
+          "no": 5,
+          "date": "2026-09-18",
+          "dateDisplay": "18 September 2026 · Jumaat",
+          "time": "10:30",
+          "court": "1.0",
+          "round": "Liga Kumpulan",
+          "reference": "A2 - A3",
+          "teamA": "ZON UTARA",
+          "teamB": "ZON TENGAH",
+          "result": ""
+        },
+        {
+          "no": 6,
+          "date": "2026-09-18",
+          "dateDisplay": "18 September 2026 · Jumaat",
+          "time": "11:00",
+          "court": "1.0",
+          "round": "Liga Kumpulan",
+          "reference": "B2 - B3",
+          "teamA": "ZON HQ",
+          "teamB": "ZON SABAH",
+          "result": ""
+        },
+        {
+          "no": 8,
+          "date": "2026-09-18",
+          "dateDisplay": "18 September 2026 · Jumaat",
+          "time": "15:00",
+          "court": "1.0",
+          "round": "Separuh Akhir",
+          "reference": "JB - NJA",
+          "teamA": "JB",
+          "teamB": "NJA",
+          "result": ""
+        },
+        {
+          "no": 9,
+          "date": "2026-09-18",
+          "dateDisplay": "18 September 2026 · Jumaat",
+          "time": "15:30",
+          "court": "1.0",
+          "round": "Separuh Akhir",
+          "reference": "JA - NJB",
+          "teamA": "JA",
+          "teamB": "NJB",
+          "result": ""
+        },
+        {
+          "no": 10,
+          "date": "2026-09-18",
+          "dateDisplay": "18 September 2026 · Jumaat",
+          "time": "16:15",
+          "court": "1.0",
+          "round": "Akhir",
+          "reference": "KH1 - KH2",
+          "teamA": "KH1",
+          "teamB": "KH2",
+          "result": ""
+        },
+        {
+          "no": 11,
+          "date": "2026-09-18",
+          "dateDisplay": "18 September 2026 · Jumaat",
+          "time": "17:00",
+          "court": "1.0",
+          "round": "Akhir",
+          "reference": "MG1 - MG2",
+          "teamA": "MG1",
+          "teamB": "MG2",
+          "result": ""
+        }
+      ]
+    },
+    {
+      "id": "futsal-wanita",
+      "sheet": "FUTSAL WANITA",
+      "name": "FUTSAL WANITA",
+      "dateLabel": "18 SEPTEMBER 2026 (JUMAAT)",
+      "venue": "GELANGGANG SINTETIK, AKADEMI SUKAN, UPM",
+      "groups": [
+        {
+          "name": "Kumpulan A",
+          "teams": [
+            "ZON TENGAH",
+            "ZON SELATAN",
+            "ZON HQ",
+            "ZON UTARA",
+            "ZON TIMUR"
+          ]
+        }
+      ],
+      "matches": [
+        {
+          "no": 1,
+          "date": "2026-09-18",
+          "dateDisplay": "18 September 2026 · Jumaat",
+          "time": "08:00",
+          "court": "",
+          "round": "Liga Kumpulan",
+          "reference": "",
+          "teamA": "ZON TENGAH",
+          "teamB": "ZON SELATAN",
+          "result": ""
+        },
+        {
+          "no": 2,
+          "date": "2026-09-18",
+          "dateDisplay": "18 September 2026 · Jumaat",
+          "time": "08:30",
+          "court": "",
+          "round": "Liga Kumpulan",
+          "reference": "",
+          "teamA": "ZON HQ",
+          "teamB": "ZON UTARA",
+          "result": ""
+        },
+        {
+          "no": 3,
+          "date": "2026-09-18",
+          "dateDisplay": "18 September 2026 · Jumaat",
+          "time": "09:00",
+          "court": "",
+          "round": "Liga Kumpulan",
+          "reference": "",
+          "teamA": "ZON TIMUR",
+          "teamB": "ZON TENGAH",
+          "result": ""
+        },
+        {
+          "no": 4,
+          "date": "2026-09-18",
+          "dateDisplay": "18 September 2026 · Jumaat",
+          "time": "09:30",
+          "court": "",
+          "round": "Liga Kumpulan",
+          "reference": "",
+          "teamA": "ZON SELATAN",
+          "teamB": "ZON HQ",
+          "result": ""
+        },
+        {
+          "no": 5,
+          "date": "2026-09-18",
+          "dateDisplay": "18 September 2026 · Jumaat",
+          "time": "10:00",
+          "court": "",
+          "round": "Liga Kumpulan",
+          "reference": "",
+          "teamA": "ZON UTARA",
+          "teamB": "ZON TIMUR",
+          "result": ""
+        },
+        {
+          "no": 6,
+          "date": "2026-09-18",
+          "dateDisplay": "18 September 2026 · Jumaat",
+          "time": "10:30",
+          "court": "",
+          "round": "Liga Kumpulan",
+          "reference": "",
+          "teamA": "ZON TENGAH",
+          "teamB": "ZON HQ",
+          "result": ""
+        },
+        {
+          "no": 7,
+          "date": "2026-09-18",
+          "dateDisplay": "18 September 2026 · Jumaat",
+          "time": "11:00",
+          "court": "",
+          "round": "Liga Kumpulan",
+          "reference": "",
+          "teamA": "ZON SELATAN",
+          "teamB": "ZON UTARA",
+          "result": ""
+        },
+        {
+          "no": 8,
+          "date": "2026-09-18",
+          "dateDisplay": "18 September 2026 · Jumaat",
+          "time": "11:30",
+          "court": "",
+          "round": "Liga Kumpulan",
+          "reference": "",
+          "teamA": "ZON HQ",
+          "teamB": "ZON TIMUR",
+          "result": ""
+        },
+        {
+          "no": 9,
+          "date": "2026-09-18",
+          "dateDisplay": "18 September 2026 · Jumaat",
+          "time": "12:00",
+          "court": "",
+          "round": "Liga Kumpulan",
+          "reference": "",
+          "teamA": "ZON TENGAH",
+          "teamB": "ZON UTARA",
+          "result": ""
+        },
+        {
+          "no": 10,
+          "date": "2026-09-18",
+          "dateDisplay": "18 September 2026 · Jumaat",
+          "time": "12:30",
+          "court": "",
+          "round": "Liga Kumpulan",
+          "reference": "",
+          "teamA": "ZON SELATAN",
+          "teamB": "ZON TIMUR",
+          "result": ""
+        },
+        {
+          "no": 11,
+          "date": "2026-09-18",
+          "dateDisplay": "18 September 2026 · Jumaat",
+          "time": "17:00",
+          "court": "",
+          "round": "Grand Final",
+          "reference": "",
+          "teamA": "",
+          "teamB": "",
+          "result": ""
+        }
+      ]
+    },
+    {
+      "id": "badminton-berpasukan",
+      "sheet": "BADMINTON BERPASUKAN",
+      "name": "BADMINTON BERPASUKAN",
+      "dateLabel": "19 SEPTEMBER 2026 (SABTU)",
+      "venue": "DEWAN SERBAGUNA AKADEMI SUKAN UPM",
+      "groups": [
+        {
+          "name": "Kumpulan A",
+          "teams": [
+            "ZON HQ",
+            "ZON TENGAH",
+            "ZON TIMUR",
+            "ZON SELATAN",
+            "ZON UTARA"
+          ]
+        }
+      ],
+      "matches": [
+        {
+          "no": 1,
+          "date": "2026-09-19",
+          "dateDisplay": "19 September 2026 · Sabtu",
+          "time": "08:00",
+          "court": "1 & 2",
+          "round": "Liga Kumpulan",
+          "reference": "",
+          "teamA": "ZON HQ",
+          "teamB": "ZON TENGAH",
+          "result": ""
+        },
+        {
+          "no": 2,
+          "date": "2026-09-19",
+          "dateDisplay": "19 September 2026 · Sabtu",
+          "time": "08:00",
+          "court": "3 & 4",
+          "round": "Liga Kumpulan",
+          "reference": "",
+          "teamA": "ZON TIMUR",
+          "teamB": "ZON SELATAN",
+          "result": ""
+        },
+        {
+          "no": 3,
+          "date": "2026-09-19",
+          "dateDisplay": "19 September 2026 · Sabtu",
+          "time": "09:30",
+          "court": "1 & 2",
+          "round": "Liga Kumpulan",
+          "reference": "",
+          "teamA": "ZON UTARA",
+          "teamB": "ZON HQ",
+          "result": ""
+        },
+        {
+          "no": 4,
+          "date": "2026-09-19",
+          "dateDisplay": "19 September 2026 · Sabtu",
+          "time": "09:30",
+          "court": "3 & 4",
+          "round": "Liga Kumpulan",
+          "reference": "",
+          "teamA": "ZON TENGAH",
+          "teamB": "ZON TIMUR",
+          "result": ""
+        },
+        {
+          "no": 5,
+          "date": "2026-09-19",
+          "dateDisplay": "19 September 2026 · Sabtu",
+          "time": "11:00",
+          "court": "1 & 2",
+          "round": "Liga Kumpulan",
+          "reference": "",
+          "teamA": "ZON SELATAN",
+          "teamB": "ZON UTARA",
+          "result": ""
+        },
+        {
+          "no": 6,
+          "date": "2026-09-19",
+          "dateDisplay": "19 September 2026 · Sabtu",
+          "time": "11:00",
+          "court": "3 & 4",
+          "round": "Liga Kumpulan",
+          "reference": "",
+          "teamA": "ZON HQ",
+          "teamB": "ZON TIMUR",
+          "result": ""
+        },
+        {
+          "no": 7,
+          "date": "2026-09-19",
+          "dateDisplay": "19 September 2026 · Sabtu",
+          "time": "12:30",
+          "court": "1 & 2",
+          "round": "Liga Kumpulan",
+          "reference": "",
+          "teamA": "ZON TENGAH",
+          "teamB": "ZON SELATAN",
+          "result": ""
+        },
+        {
+          "no": 8,
+          "date": "2026-09-19",
+          "dateDisplay": "19 September 2026 · Sabtu",
+          "time": "12:30",
+          "court": "3 & 4",
+          "round": "Liga Kumpulan",
+          "reference": "",
+          "teamA": "ZON TIMUR",
+          "teamB": "ZON UTARA",
+          "result": ""
+        },
+        {
+          "no": 9,
+          "date": "2026-09-19",
+          "dateDisplay": "19 September 2026 · Sabtu",
+          "time": "15:00",
+          "court": "1 & 2",
+          "round": "Liga Kumpulan",
+          "reference": "",
+          "teamA": "ZON HQ",
+          "teamB": "ZON SELATAN",
+          "result": ""
+        },
+        {
+          "no": 10,
+          "date": "2026-09-19",
+          "dateDisplay": "19 September 2026 · Sabtu",
+          "time": "15:00",
+          "court": "3 & 4",
+          "round": "Liga Kumpulan",
+          "reference": "",
+          "teamA": "ZON TENGAH",
+          "teamB": "ZON UTARA",
+          "result": ""
+        },
+        {
+          "no": 11,
+          "date": "2026-09-19",
+          "dateDisplay": "19 September 2026 · Sabtu",
+          "time": "17:00",
+          "court": "2.0",
+          "round": "Grand Final",
+          "reference": "",
+          "teamA": "",
+          "teamB": "",
+          "result": ""
+        }
+      ]
+    },
+    {
+      "id": "karom-berpasukan",
+      "sheet": "KAROM BERPASUKAN",
+      "name": "KAROM BERPASUKAN",
+      "dateLabel": "18 SEPTEMBER 2026 (JUMAAT)",
+      "venue": "BILIK TERAPI SUKAN, AKADEMI SUKAN, UPM",
+      "groups": [
+        {
+          "name": "Kumpulan A",
+          "teams": [
+            "ZON HQ",
+            "ZON TENGAH",
+            "ZON UTARA"
+          ]
+        },
+        {
+          "name": "Kumpulan B",
+          "teams": [
+            "ZON TIMUR",
+            "ZON SELATAN",
+            "ZON SABAH"
+          ]
+        }
+      ],
+      "matches": [
+        {
+          "no": 1,
+          "date": "2026-09-18",
+          "dateDisplay": "18 September 2026 · Jumaat",
+          "time": "08:30",
+          "court": "",
+          "round": "Liga Kumpulan",
+          "reference": "A1 - A3",
+          "teamA": "ZON HQ",
+          "teamB": "ZON UTARA",
+          "result": ""
+        },
+        {
+          "no": 2,
+          "date": "2026-09-18",
+          "dateDisplay": "18 September 2026 · Jumaat",
+          "time": "08:30",
+          "court": "",
+          "round": "Liga Kumpulan",
+          "reference": "B1 - B3",
+          "teamA": "ZON TIMUR",
+          "teamB": "ZON SABAH",
+          "result": ""
+        },
+        {
+          "no": 3,
+          "date": "2026-09-18",
+          "dateDisplay": "18 September 2026 · Jumaat",
+          "time": "09:30",
+          "court": "",
+          "round": "Liga Kumpulan",
+          "reference": "A1 - A2",
+          "teamA": "ZON HQ",
+          "teamB": "ZON TENGAH",
+          "result": ""
+        },
+        {
+          "no": 4,
+          "date": "2026-09-18",
+          "dateDisplay": "18 September 2026 · Jumaat",
+          "time": "09:30",
+          "court": "",
+          "round": "Liga Kumpulan",
+          "reference": "B1 - B2",
+          "teamA": "ZON TIMUR",
+          "teamB": "ZON SELATAN",
+          "result": ""
+        },
+        {
+          "no": 5,
+          "date": "2026-09-18",
+          "dateDisplay": "18 September 2026 · Jumaat",
+          "time": "10:30",
+          "court": "",
+          "round": "Liga Kumpulan",
+          "reference": "A2 - A3",
+          "teamA": "ZON TENGAH",
+          "teamB": "ZON UTARA",
+          "result": ""
+        },
+        {
+          "no": 6,
+          "date": "2026-09-18",
+          "dateDisplay": "18 September 2026 · Jumaat",
+          "time": "10:30",
+          "court": "",
+          "round": "Liga Kumpulan",
+          "reference": "B2 - B3",
+          "teamA": "ZON SELATAN",
+          "teamB": "ZON SABAH",
+          "result": ""
+        },
+        {
+          "no": 8,
+          "date": "2026-09-18",
+          "dateDisplay": "18 September 2026 · Jumaat",
+          "time": "15:00",
+          "court": "",
+          "round": "Separuh Akhir",
+          "reference": "JB - NJA",
+          "teamA": "JB",
+          "teamB": "NJA",
+          "result": ""
+        },
+        {
+          "no": 9,
+          "date": "2026-09-18",
+          "dateDisplay": "18 September 2026 · Jumaat",
+          "time": "15:00",
+          "court": "",
+          "round": "Separuh Akhir",
+          "reference": "JA - NJB",
+          "teamA": "JA",
+          "teamB": "NJB",
+          "result": ""
+        },
+        {
+          "no": 10,
+          "date": "2026-09-18",
+          "dateDisplay": "18 September 2026 · Jumaat",
+          "time": "16:30",
+          "court": "",
+          "round": "Akhir",
+          "reference": "KH1 - KH2",
+          "teamA": "KH1",
+          "teamB": "KH2",
+          "result": ""
+        },
+        {
+          "no": 11,
+          "date": "2026-09-18",
+          "dateDisplay": "18 September 2026 · Jumaat",
+          "time": "16:30",
+          "court": "",
+          "round": "Akhir",
+          "reference": "MG1 - MG2",
+          "teamA": "MG1",
+          "teamB": "MG2",
+          "result": ""
+        }
+      ]
+    },
+    {
+      "id": "dart-berpasukan",
+      "sheet": "DART BERPASUKAN",
+      "name": "DART BERPASUKAN",
+      "dateLabel": "19 SEPTEMBER 2026 (SABTU)",
+      "venue": "BILIK SEMINAR, AKADEMI SUKAN, UPM",
+      "groups": [
+        {
+          "name": "Kumpulan A",
+          "teams": [
+            "ZON HQ",
+            "ZON TIMUR",
+            "ZON TENGAH"
+          ]
+        },
+        {
+          "name": "Kumpulan B",
+          "teams": [
+            "ZON SELATAN",
+            "ZON UTARA",
+            "ZON SABAH"
+          ]
+        }
+      ],
+      "matches": [
+        {
+          "no": 1,
+          "date": "2026-09-19",
+          "dateDisplay": "19 September 2026 · Sabtu",
+          "time": "08:30",
+          "court": "",
+          "round": "Liga Kumpulan",
+          "reference": "A1 - A3",
+          "teamA": "ZON HQ",
+          "teamB": "ZON TENGAH",
+          "result": ""
+        },
+        {
+          "no": 2,
+          "date": "2026-09-19",
+          "dateDisplay": "19 September 2026 · Sabtu",
+          "time": "08:30",
+          "court": "",
+          "round": "Liga Kumpulan",
+          "reference": "B1 - B3",
+          "teamA": "ZON SELATAN",
+          "teamB": "ZON SABAH",
+          "result": ""
+        },
+        {
+          "no": 3,
+          "date": "2026-09-19",
+          "dateDisplay": "19 September 2026 · Sabtu",
+          "time": "09:30",
+          "court": "",
+          "round": "Liga Kumpulan",
+          "reference": "A1 - A2",
+          "teamA": "ZON HQ",
+          "teamB": "ZON TIMUR",
+          "result": ""
+        },
+        {
+          "no": 4,
+          "date": "2026-09-19",
+          "dateDisplay": "19 September 2026 · Sabtu",
+          "time": "09:30",
+          "court": "",
+          "round": "Liga Kumpulan",
+          "reference": "B1 - B2",
+          "teamA": "ZON SELATAN",
+          "teamB": "ZON UTARA",
+          "result": ""
+        },
+        {
+          "no": 5,
+          "date": "2026-09-19",
+          "dateDisplay": "19 September 2026 · Sabtu",
+          "time": "10:30",
+          "court": "",
+          "round": "Liga Kumpulan",
+          "reference": "A2 - A3",
+          "teamA": "ZON TIMUR",
+          "teamB": "ZON TENGAH",
+          "result": ""
+        },
+        {
+          "no": 6,
+          "date": "2026-09-19",
+          "dateDisplay": "19 September 2026 · Sabtu",
+          "time": "10:30",
+          "court": "",
+          "round": "Liga Kumpulan",
+          "reference": "B2 - B3",
+          "teamA": "ZON UTARA",
+          "teamB": "ZON SABAH",
+          "result": ""
+        },
+        {
+          "no": 8,
+          "date": "2026-09-19",
+          "dateDisplay": "19 September 2026 · Sabtu",
+          "time": "12:00",
+          "court": "",
+          "round": "Separuh Akhir",
+          "reference": "JB - NJA",
+          "teamA": "JB",
+          "teamB": "NJA",
+          "result": ""
+        },
+        {
+          "no": 9,
+          "date": "2026-09-19",
+          "dateDisplay": "19 September 2026 · Sabtu",
+          "time": "12:00",
+          "court": "",
+          "round": "Separuh Akhir",
+          "reference": "JA - NJB",
+          "teamA": "JA",
+          "teamB": "NJB",
+          "result": ""
+        },
+        {
+          "no": 10,
+          "date": "2026-09-19",
+          "dateDisplay": "19 September 2026 · Sabtu",
+          "time": "14:30",
+          "court": "",
+          "round": "Akhir",
+          "reference": "KH1 - KH2",
+          "teamA": "KH1",
+          "teamB": "KH2",
+          "result": ""
+        },
+        {
+          "no": 11,
+          "date": "2026-09-19",
+          "dateDisplay": "19 September 2026 · Sabtu",
+          "time": "15:00",
+          "court": "",
+          "round": "Akhir",
+          "reference": "MG1 - MG2",
+          "teamA": "MG1",
+          "teamB": "MG2",
+          "result": ""
+        }
+      ]
+    },
+    {
+      "id": "sepak-takraw-regu",
+      "sheet": "SEPAK TAKRAW REGU",
+      "name": "SEPAK TAKRAW BERPASUKAN LELAKI",
+      "dateLabel": "20 SEPTEMBER 2026 (AHAD)",
+      "venue": "DEWAN SERBAGUNA AKADEMI SUKAN UPM",
+      "groups": [
+        {
+          "name": "Kumpulan A",
+          "teams": [
+            "ZON HQ",
+            "ZON SELATAN",
+            "ZON TENGAH",
+            "ZON UTARA",
+            "ZON TIMUR"
+          ]
+        }
+      ],
+      "matches": [
+        {
+          "no": 1,
+          "date": "2026-09-20",
+          "dateDisplay": "20 September 2026 · Ahad",
+          "time": "08:30",
+          "court": "A",
+          "round": "Liga Kumpulan",
+          "reference": "",
+          "teamA": "ZON HQ",
+          "teamB": "ZON SELATAN",
+          "result": ""
+        },
+        {
+          "no": 2,
+          "date": "2026-09-20",
+          "dateDisplay": "20 September 2026 · Ahad",
+          "time": "08:30",
+          "court": "C",
+          "round": "Liga Kumpulan",
+          "reference": "",
+          "teamA": "ZON TENGAH",
+          "teamB": "ZON UTARA",
+          "result": ""
+        },
+        {
+          "no": 3,
+          "date": "2026-09-20",
+          "dateDisplay": "20 September 2026 · Ahad",
+          "time": "09:30",
+          "court": "A",
+          "round": "Liga Kumpulan",
+          "reference": "",
+          "teamA": "ZON TIMUR",
+          "teamB": "ZON HQ",
+          "result": ""
+        },
+        {
+          "no": 4,
+          "date": "2026-09-20",
+          "dateDisplay": "20 September 2026 · Ahad",
+          "time": "09:30",
+          "court": "C",
+          "round": "Liga Kumpulan",
+          "reference": "",
+          "teamA": "ZON SELATAN",
+          "teamB": "ZON TENGAH",
+          "result": ""
+        },
+        {
+          "no": 5,
+          "date": "2026-09-20",
+          "dateDisplay": "20 September 2026 · Ahad",
+          "time": "10:30",
+          "court": "A",
+          "round": "Liga Kumpulan",
+          "reference": "",
+          "teamA": "ZON UTARA",
+          "teamB": "ZON TIMUR",
+          "result": ""
+        },
+        {
+          "no": 6,
+          "date": "2026-09-20",
+          "dateDisplay": "20 September 2026 · Ahad",
+          "time": "10:30",
+          "court": "C",
+          "round": "Liga Kumpulan",
+          "reference": "",
+          "teamA": "ZON HQ",
+          "teamB": "ZON TENGAH",
+          "result": ""
+        },
+        {
+          "no": 7,
+          "date": "2026-09-20",
+          "dateDisplay": "20 September 2026 · Ahad",
+          "time": "11:30",
+          "court": "A",
+          "round": "Liga Kumpulan",
+          "reference": "",
+          "teamA": "ZON SELATAN",
+          "teamB": "ZON UTARA",
+          "result": ""
+        },
+        {
+          "no": 8,
+          "date": "2026-09-20",
+          "dateDisplay": "20 September 2026 · Ahad",
+          "time": "11:30",
+          "court": "C",
+          "round": "Liga Kumpulan",
+          "reference": "",
+          "teamA": "ZON TENGAH",
+          "teamB": "ZON TIMUR",
+          "result": ""
+        },
+        {
+          "no": 9,
+          "date": "2026-09-20",
+          "dateDisplay": "20 September 2026 · Ahad",
+          "time": "14:00",
+          "court": "A",
+          "round": "Liga Kumpulan",
+          "reference": "",
+          "teamA": "ZON HQ",
+          "teamB": "ZON UTARA",
+          "result": ""
+        },
+        {
+          "no": 10,
+          "date": "2026-09-20",
+          "dateDisplay": "20 September 2026 · Ahad",
+          "time": "14:00",
+          "court": "C",
+          "round": "Liga Kumpulan",
+          "reference": "",
+          "teamA": "ZON SELATAN",
+          "teamB": "ZON TIMUR",
+          "result": ""
+        },
+        {
+          "no": 11,
+          "date": "2026-09-20",
+          "dateDisplay": "20 September 2026 · Ahad",
+          "time": "15:30",
+          "court": "",
+          "round": "Grand Final",
+          "reference": "",
+          "teamA": "",
+          "teamB": "",
+          "result": ""
+        }
+      ]
+    },
+    {
+      "id": "ping-pong-berpasukan",
+      "sheet": "PING PONG BERPASUKAN",
+      "name": "PING PONG BERPASUKAN",
+      "dateLabel": "19 SEPTEMBER 2026 (SABTU)",
+      "venue": "DEWAN SERBAGUNA AKADEMI SUKAN UPM",
+      "groups": [
+        {
+          "name": "Kumpulan A",
+          "teams": [
+            "ZON TENGAH",
+            "ZON SELATAN",
+            "ZON UTARA",
+            "ZON TIMUR",
+            "ZON HQ"
+          ]
+        }
+      ],
+      "matches": [
+        {
+          "no": 1,
+          "date": "2026-09-19",
+          "dateDisplay": "19 September 2026 · Sabtu",
+          "time": "08:00",
+          "court": "A & B",
+          "round": "Liga Kumpulan",
+          "reference": "",
+          "teamA": "ZON TENGAH",
+          "teamB": "ZON SELATAN",
+          "result": ""
+        },
+        {
+          "no": 2,
+          "date": "2026-09-19",
+          "dateDisplay": "19 September 2026 · Sabtu",
+          "time": "08:00",
+          "court": "C & D",
+          "round": "Liga Kumpulan",
+          "reference": "",
+          "teamA": "ZON UTARA",
+          "teamB": "ZON TIMUR",
+          "result": ""
+        },
+        {
+          "no": 3,
+          "date": "2026-09-19",
+          "dateDisplay": "19 September 2026 · Sabtu",
+          "time": "09:30",
+          "court": "A & B",
+          "round": "Liga Kumpulan",
+          "reference": "",
+          "teamA": "ZON HQ",
+          "teamB": "ZON TENGAH",
+          "result": ""
+        },
+        {
+          "no": 4,
+          "date": "2026-09-19",
+          "dateDisplay": "19 September 2026 · Sabtu",
+          "time": "09:30",
+          "court": "C & D",
+          "round": "Liga Kumpulan",
+          "reference": "",
+          "teamA": "ZON SELATAN",
+          "teamB": "ZON UTARA",
+          "result": ""
+        },
+        {
+          "no": 5,
+          "date": "2026-09-19",
+          "dateDisplay": "19 September 2026 · Sabtu",
+          "time": "11:00",
+          "court": "A & B",
+          "round": "Liga Kumpulan",
+          "reference": "",
+          "teamA": "ZON TIMUR",
+          "teamB": "ZON HQ",
+          "result": ""
+        },
+        {
+          "no": 6,
+          "date": "2026-09-19",
+          "dateDisplay": "19 September 2026 · Sabtu",
+          "time": "11:00",
+          "court": "C & D",
+          "round": "Liga Kumpulan",
+          "reference": "",
+          "teamA": "ZON TENGAH",
+          "teamB": "ZON UTARA",
+          "result": ""
+        },
+        {
+          "no": 7,
+          "date": "2026-09-19",
+          "dateDisplay": "19 September 2026 · Sabtu",
+          "time": "12:30",
+          "court": "A & B",
+          "round": "Liga Kumpulan",
+          "reference": "",
+          "teamA": "ZON SELATAN",
+          "teamB": "ZON TIMUR",
+          "result": ""
+        },
+        {
+          "no": 8,
+          "date": "2026-09-19",
+          "dateDisplay": "19 September 2026 · Sabtu",
+          "time": "12:30",
+          "court": "C & D",
+          "round": "Liga Kumpulan",
+          "reference": "",
+          "teamA": "ZON UTARA",
+          "teamB": "ZON HQ",
+          "result": ""
+        },
+        {
+          "no": 9,
+          "date": "2026-09-19",
+          "dateDisplay": "19 September 2026 · Sabtu",
+          "time": "15:00",
+          "court": "A & B",
+          "round": "Liga Kumpulan",
+          "reference": "",
+          "teamA": "ZON TENGAH",
+          "teamB": "ZON TIMUR",
+          "result": ""
+        },
+        {
+          "no": 10,
+          "date": "2026-09-19",
+          "dateDisplay": "19 September 2026 · Sabtu",
+          "time": "15:00",
+          "court": "C & D",
+          "round": "Liga Kumpulan",
+          "reference": "",
+          "teamA": "ZON SELATAN",
+          "teamB": "ZON HQ",
+          "result": ""
+        },
+        {
+          "no": 11,
+          "date": "2026-09-19",
+          "dateDisplay": "19 September 2026 · Sabtu",
+          "time": "17:00",
+          "court": "A",
+          "round": "Grand Final",
+          "reference": "",
+          "teamA": "",
+          "teamB": "",
+          "result": ""
+        }
+      ]
+    },
+    {
+      "id": "tarik-tali-680kg",
+      "sheet": "TARIK TALI (680KG)",
+      "name": "TARIK TALI (KATEGORI LELAKI 680KG)",
+      "dateLabel": "18 SEPTEMBER 2026 (JUMAAT)",
+      "venue": "LAPANG SASAR MEMANAH, UPM",
+      "groups": [
+        {
+          "name": "Kumpulan A",
+          "teams": [
+            "ZON HQ",
+            "ZON TENGAH",
+            "ZON SELATAN",
+            "ZON UTARA",
+            "ZON TIMUR"
+          ]
+        }
+      ],
+      "matches": [
+        {
+          "no": 1,
+          "date": "2026-09-18",
+          "dateDisplay": "18 September 2026 · Jumaat",
+          "time": "08:00",
+          "court": "",
+          "round": "Liga Kumpulan",
+          "reference": "",
+          "teamA": "ZON HQ",
+          "teamB": "ZON TENGAH",
+          "result": ""
+        },
+        {
+          "no": 2,
+          "date": "2026-09-18",
+          "dateDisplay": "18 September 2026 · Jumaat",
+          "time": "08:20",
+          "court": "",
+          "round": "Liga Kumpulan",
+          "reference": "",
+          "teamA": "ZON SELATAN",
+          "teamB": "ZON UTARA",
+          "result": ""
+        },
+        {
+          "no": 3,
+          "date": "2026-09-18",
+          "dateDisplay": "18 September 2026 · Jumaat",
+          "time": "08:40",
+          "court": "",
+          "round": "Liga Kumpulan",
+          "reference": "",
+          "teamA": "ZON TIMUR",
+          "teamB": "ZON HQ",
+          "result": ""
+        },
+        {
+          "no": 4,
+          "date": "2026-09-18",
+          "dateDisplay": "18 September 2026 · Jumaat",
+          "time": "09:00",
+          "court": "",
+          "round": "Liga Kumpulan",
+          "reference": "",
+          "teamA": "ZON TENGAH",
+          "teamB": "ZON SELATAN",
+          "result": ""
+        },
+        {
+          "no": 5,
+          "date": "2026-09-18",
+          "dateDisplay": "18 September 2026 · Jumaat",
+          "time": "09:20",
+          "court": "",
+          "round": "Liga Kumpulan",
+          "reference": "",
+          "teamA": "ZON UTARA",
+          "teamB": "ZON TIMUR",
+          "result": ""
+        },
+        {
+          "no": 6,
+          "date": "2026-09-18",
+          "dateDisplay": "18 September 2026 · Jumaat",
+          "time": "09:40",
+          "court": "",
+          "round": "Liga Kumpulan",
+          "reference": "",
+          "teamA": "ZON HQ",
+          "teamB": "ZON SELATAN",
+          "result": ""
+        },
+        {
+          "no": 7,
+          "date": "2026-09-18",
+          "dateDisplay": "18 September 2026 · Jumaat",
+          "time": "10:00",
+          "court": "",
+          "round": "Liga Kumpulan",
+          "reference": "",
+          "teamA": "ZON TENGAH",
+          "teamB": "ZON UTARA",
+          "result": ""
+        },
+        {
+          "no": 8,
+          "date": "2026-09-18",
+          "dateDisplay": "18 September 2026 · Jumaat",
+          "time": "10:20",
+          "court": "",
+          "round": "Liga Kumpulan",
+          "reference": "",
+          "teamA": "ZON SELATAN",
+          "teamB": "ZON TIMUR",
+          "result": ""
+        },
+        {
+          "no": 9,
+          "date": "2026-09-18",
+          "dateDisplay": "18 September 2026 · Jumaat",
+          "time": "10:40",
+          "court": "",
+          "round": "Liga Kumpulan",
+          "reference": "",
+          "teamA": "ZON HQ",
+          "teamB": "ZON UTARA",
+          "result": ""
+        },
+        {
+          "no": 10,
+          "date": "2026-09-18",
+          "dateDisplay": "18 September 2026 · Jumaat",
+          "time": "11:00",
+          "court": "",
+          "round": "Liga Kumpulan",
+          "reference": "",
+          "teamA": "ZON TENGAH",
+          "teamB": "ZON TIMUR",
+          "result": ""
+        },
+        {
+          "no": 11,
+          "date": "2026-09-18",
+          "dateDisplay": "18 September 2026 · Jumaat",
+          "time": "11:40",
+          "court": "",
+          "round": "Grand Final",
+          "reference": "",
+          "teamA": "",
+          "teamB": "",
+          "result": ""
+        }
+      ]
+    },
+    {
+      "id": "tarik-tali-freeweight",
+      "sheet": "TARIK TALI (FREEWEIGHT)",
+      "name": "TARIK TALI (KATEGORI FREEWEIGHT)",
+      "dateLabel": "18 SEPTEMBER 2026 (JUMAAT)",
+      "venue": "LAPANG SASAR MEMANAH, UPM",
+      "groups": [
+        {
+          "name": "Kumpulan A",
+          "teams": [
+            "ZON TIMUR",
+            "ZON TENGAH",
+            "ZON HQ",
+            "ZON SELATAN"
+          ]
+        }
+      ],
+      "matches": [
+        {
+          "no": 1,
+          "date": "2026-09-18",
+          "dateDisplay": "18 September 2026 · Jumaat",
+          "time": "15:00",
+          "court": "",
+          "round": "Liga Kumpulan",
+          "reference": "",
+          "teamA": "ZON TIMUR",
+          "teamB": "ZON TENGAH",
+          "result": ""
+        },
+        {
+          "no": 2,
+          "date": "2026-09-18",
+          "dateDisplay": "18 September 2026 · Jumaat",
+          "time": "15:30",
+          "court": "",
+          "round": "Liga Kumpulan",
+          "reference": "",
+          "teamA": "ZON HQ",
+          "teamB": "ZON SELATAN",
+          "result": ""
+        },
+        {
+          "no": 3,
+          "date": "2026-09-18",
+          "dateDisplay": "18 September 2026 · Jumaat",
+          "time": "16:00",
+          "court": "",
+          "round": "Liga Kumpulan",
+          "reference": "",
+          "teamA": "ZON TIMUR",
+          "teamB": "ZON HQ",
+          "result": ""
+        },
+        {
+          "no": 4,
+          "date": "2026-09-18",
+          "dateDisplay": "18 September 2026 · Jumaat",
+          "time": "16:30",
+          "court": "",
+          "round": "Liga Kumpulan",
+          "reference": "",
+          "teamA": "ZON TENGAH",
+          "teamB": "ZON SELATAN",
+          "result": ""
+        },
+        {
+          "no": 5,
+          "date": "2026-09-18",
+          "dateDisplay": "18 September 2026 · Jumaat",
+          "time": "17:00",
+          "court": "",
+          "round": "Liga Kumpulan",
+          "reference": "",
+          "teamA": "ZON TIMUR",
+          "teamB": "ZON SELATAN",
+          "result": ""
+        },
+        {
+          "no": 6,
+          "date": "2026-09-18",
+          "dateDisplay": "18 September 2026 · Jumaat",
+          "time": "17:30",
+          "court": "",
+          "round": "Liga Kumpulan",
+          "reference": "",
+          "teamA": "ZON TENGAH",
+          "teamB": "ZON HQ",
+          "result": ""
+        },
+        {
+          "no": 7,
+          "date": "2026-09-18",
+          "dateDisplay": "18 September 2026 · Jumaat",
+          "time": "18:10",
+          "court": "",
+          "round": "Grand Final",
+          "reference": "",
+          "teamA": "",
+          "teamB": "",
+          "result": ""
+        }
+      ]
+    }
+  ]
+};
