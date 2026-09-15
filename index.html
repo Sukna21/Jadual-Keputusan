@@ -7,7 +7,7 @@
   <title>SUKNA XXI | Jadual & Keputusan</title>
   <meta name="description" content="Match Centre SUKNA XXI Selangor 2026 — jadual perlawanan dan keputusan berdasarkan jadual rasmi kejohanan.">
   <link rel="icon" href="assets/mascot.webp" type="image/webp">
-  <link rel="stylesheet" href="css/style.css?v=1">
+  <link rel="stylesheet" href="css/style.css?v=2">
 </head>
 <body>
   <header class="topbar">
@@ -19,6 +19,7 @@
       <button class="menu-btn" id="menuBtn" aria-label="Menu">☰</button>
       <nav id="mainNav">
         <a href="#dashboard" class="active">Utama</a>
+        <a href="#pingat">Pingat</a>
         <a href="#jadual-umum">Jadual Umum</a>
         <a href="#sukan">Sukan</a>
         <a href="#match-centre">Perlawanan</a>
@@ -48,6 +49,52 @@
 
     <section class="quick-stats">
       <div class="shell stat-grid" id="summaryStats"></div>
+    </section>
+
+    <section class="section medal-section" id="pingat">
+      <div class="shell">
+        <div class="section-title-row medal-title-row">
+          <div>
+            <span class="eyebrow">KEDUDUKAN KESELURUHAN</span>
+            <h2>Pungutan Pingat</h2>
+            <p>Kedudukan kontinjen berdasarkan jumlah pingat rasmi. Susunan automatik mengikut <b>Emas → Perak → Gangsa → Jumlah</b>.</p>
+          </div>
+          <div class="medal-status" id="medalStatus">
+            <span>●</span>
+            <div><small>STATUS DATA</small><b>Menunggu keputusan rasmi</b></div>
+          </div>
+        </div>
+
+        <div class="medal-board">
+          <div class="medal-board-head">
+            <div><b>🏆 Kedudukan Pungutan Pingat Keseluruhan</b><small>SUKNA XXI Selangor 2026</small></div>
+            <div class="medal-legend">
+              <span>🥇 Emas</span><span>🥈 Perak</span><span>🥉 Gangsa</span>
+            </div>
+          </div>
+
+          <div class="medal-table-wrap">
+            <table class="medal-table">
+              <thead>
+                <tr>
+                  <th class="rank-col">Ked.</th>
+                  <th>Kontinjen</th>
+                  <th class="num-col">🥇<span>Emas</span></th>
+                  <th class="num-col">🥈<span>Perak</span></th>
+                  <th class="num-col">🥉<span>Gangsa</span></th>
+                  <th class="num-col total-col">Jumlah</th>
+                </tr>
+              </thead>
+              <tbody id="medalTableBody"></tbody>
+            </table>
+          </div>
+
+          <div class="medal-empty-note" id="medalEmptyNote">
+            <span>ℹ️</span>
+            <div><b>Belum ada pungutan pingat rasmi</b><small>Jadual akan dikemas kini sebaik keputusan rasmi dimasukkan.</small></div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="section" id="jadual-umum">
@@ -99,7 +146,7 @@
     </div>
   </footer>
 
-  <script src="js/data.js?v=1"></script>
-  <script src="js/app.js?v=1"></script>
+  <script src="js/data.js?v=2"></script>
+  <script src="js/app.js?v=2"></script>
 </body>
 </html>

@@ -4,6 +4,14 @@ window.SUKNA_MATCH_DATA = {
     "source": "LATEST JADUAL SUKNA (1).xlsx",
     "updated": "Snapshot daripada fail XLSX yang dimuat naik"
   },
+  "medals": [
+    {"contingent":"ZON HQ","gold":null,"silver":null,"bronze":null},
+    {"contingent":"ZON TENGAH","gold":null,"silver":null,"bronze":null},
+    {"contingent":"ZON UTARA","gold":null,"silver":null,"bronze":null},
+    {"contingent":"ZON TIMUR","gold":null,"silver":null,"bronze":null},
+    {"contingent":"ZON SELATAN","gold":null,"silver":null,"bronze":null},
+    {"contingent":"ZON SABAH","gold":null,"silver":null,"bronze":null}
+  ],
   "general": [
     {
       "no": "1.0",

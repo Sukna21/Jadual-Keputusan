@@ -28,6 +28,58 @@
     ['🏆',D.general.length,'Acara dalam Jadual Umum'],['⚔️',totalMatches,'Perlawanan dalam tab sukan'],['🥇',gold,'Pingat emas'],['📍',venues,'Venue pertandingan']
   ].map(x=>`<article class="stat-card"><i>${x[0]}</i><div><b>${x[1]}</b><small>${x[2]}</small></div></article>`).join('');
 
+  // Overall medal standings.
+  // No medal count is invented: null values render as em-dashes until official results are entered.
+  function medalNumber(v){ return Number.isFinite(Number(v)) && v!==null && v!=='' ? Number(v) : null; }
+  function medalTotal(row){
+    const g=medalNumber(row.gold), s=medalNumber(row.silver), b=medalNumber(row.bronze);
+    return [g,s,b].some(v=>v!==null) ? (g||0)+(s||0)+(b||0) : null;
+  }
+  function renderMedalStandings(){
+    const source=(D.medals||[]).map((m,i)=>({...m,_index:i,total:medalTotal(m)}));
+    const hasOfficial=source.some(m=>m.total!==null);
+    const rows=[...source];
+
+    if(hasOfficial){
+      rows.sort((a,b)=>{
+        const ag=medalNumber(a.gold)||0, bg=medalNumber(b.gold)||0;
+        const as=medalNumber(a.silver)||0, bs=medalNumber(b.silver)||0;
+        const ab=medalNumber(a.bronze)||0, bb=medalNumber(b.bronze)||0;
+        const at=a.total||0, bt=b.total||0;
+        return (bg-ag)||(bs-as)||(bb-ab)||(bt-at)||(a._index-b._index);
+      });
+    }
+
+    let previousKey='', previousRank=0;
+    $('#medalTableBody').innerHTML=rows.map((m,i)=>{
+      const g=medalNumber(m.gold), s=medalNumber(m.silver), b=medalNumber(m.bronze);
+      const key=`${g||0}|${s||0}|${b||0}|${m.total||0}`;
+      let rank='—';
+      if(hasOfficial){
+        if(key!==previousKey) previousRank=i+1;
+        rank=previousRank;
+        previousKey=key;
+      }
+      const cls=hasOfficial && rank<=3 ? ` podium rank-${rank}` : '';
+      return `<tr class="${cls.trim()}">
+        <td class="rank-cell"><span>${rank}</span></td>
+        <td class="contingent-cell"><b>${m.contingent}</b></td>
+        <td class="medal-value gold-value">${g===null?'—':g}</td>
+        <td class="medal-value silver-value">${s===null?'—':s}</td>
+        <td class="medal-value bronze-value">${b===null?'—':b}</td>
+        <td class="medal-value total-value">${m.total===null?'—':m.total}</td>
+      </tr>`;
+    }).join('');
+
+    $('#medalEmptyNote').hidden=hasOfficial;
+    const status=$('#medalStatus');
+    if(status){
+      status.classList.toggle('live',hasOfficial);
+      status.querySelector('b').textContent=hasOfficial?'Keputusan rasmi dikemas kini':'Menunggu keputusan rasmi';
+    }
+  }
+  renderMedalStandings();
+
   // menu
   $('#menuBtn').addEventListener('click',()=>$('#mainNav').classList.toggle('open'));
   $$('#mainNav a').forEach(a=>a.addEventListener('click',()=>$('#mainNav').classList.remove('open')));
