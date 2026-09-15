@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="460" viewBox="0 0 360 460">
+<rect width="360" height="460" fill="none"/><ellipse cx="180" cy="416" rx="110" ry="22" fill="#000" opacity=".12"/>
+<path d="M180 48c61 0 110 51 110 114 0 39-19 74-48 94l28 127H90l28-127c-29-20-48-55-48-94C70 99 119 48 180 48z" fill="#fff" stroke="#d8d8d8" stroke-width="6"/>
+<path d="M92 150L36 123l50 62z" fill="#f3c61b"/><path d="M268 150l56-27-50 62z" fill="#f3c61b"/>
+<circle cx="143" cy="145" r="10" fill="#161616"/><circle cx="217" cy="145" r="10" fill="#161616"/>
+<path d="M162 171l18 12 18-12-18-23z" fill="#e3a719"/><path d="M112 274h136l18 107H94z" fill="#e31e24"/>
+<text x="180" y="333" text-anchor="middle" font-family="Arial Black,Arial" font-size="34" fill="#fff">SUKNA</text>
+<text x="180" y="367" text-anchor="middle" font-family="Arial Black,Arial" font-size="26" fill="#f3c61b">XXI</text>
+</svg>

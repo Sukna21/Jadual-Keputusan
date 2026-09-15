@@ -1,0 +1,9 @@
+{
+  "name": "Jadual & Keputusan SUKNA XXI",
+  "short_name": "SUKNA Match",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#fffaf0",
+  "theme_color": "#e31e24",
+  "description": "Match Centre SUKNA XXI Selangor 2026"
+}
