@@ -50,3 +50,16 @@ Google Sheet:
 `1qiRF16JhUlDBV9ZvoO6YhA5JnCbjqFcs`
 
 Parser menggunakan Google Visualization endpoint dengan `headers=0`, supaya blok metadata seperti `ACARA:`, `TARIKH:` dan `TEMPAT:` boleh dibaca terus.
+
+
+## Navigation scope
+
+Versi ini khusus untuk **Jadual & Keputusan / Match Centre** sahaja.
+
+Navigasi tidak lagi mengandungi:
+- Venue
+- Penginapan
+- Galeri
+- seksyen lain Portal-Main
+
+Semua navigasi dalaman kekal di Match Centre ini, kecuali pautan eksplisit ke Google Sheet rasmi.
